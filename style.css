@@ -42,6 +42,7 @@ body * {
 }
 
 /*Perfil*/
+
 .profile {
   text-align: center;
   padding: 24px;
@@ -62,6 +63,7 @@ body * {
 }
 
 /*Switch*/
+
 #switch {
   position: relative;
   width: 64px;
@@ -80,7 +82,12 @@ body * {
   left: 0;
   z-index: 1;
   transform: translateY(-50%);
-  animation: slide-back 0.2s;
+
+  transition: left 0.2s;
+}
+
+.light #switch button {
+  left: 32px;
 }
 
 .light #switch button:hover {
@@ -99,6 +106,7 @@ body * {
 }
 
 /*links*/
+
 ul {
   list-style: none;
   display: flex;
@@ -131,6 +139,7 @@ ul li a:hover {
 }
 
 /*Social Links*/
+
 #social-links {
   display: flex;
   justify-content: center;
@@ -159,6 +168,7 @@ footer {
 }
 
 /*media-queries*/
+
 @media (min-width: 700px) {
   :root {
     --bg-url: url(./assets/bg-desktop.jpg);
@@ -170,6 +180,7 @@ footer {
 }
 
 /*animations*/
+
 @keyframes slide-in {
   from {
     left: 0;
@@ -178,7 +189,6 @@ footer {
     left: 50%;
   }
 }
-
 @keyframes slide-back {
   from {
     left: 50%;
